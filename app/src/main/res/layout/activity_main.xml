@@ -71,7 +71,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHeight_percent="0.5"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintWidth_percent="0.5" />
+            app:layout_constraintWidth_percent="0.5"
+            android:onClick="Display"/>
 
         <ImageButton
             android:id="@+id/Math"
@@ -85,7 +86,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHeight_percent="0.5"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintWidth_percent="0.5" />
+            app:layout_constraintWidth_percent="0.5"
+            android:onClick="Display"/>
 
         <ImageButton
             android:id="@+id/SE"
@@ -98,71 +100,10 @@
             app:layout_constraintTop_toBottomOf="@id/Design"
             app:layout_constraintHeight_percent="0.5"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintWidth_percent="0.5" />
-
-<!--        <ImageButton-->
-<!--            android:id="@+id/CS"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="0dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:background="@color/black"-->
-<!--            android:orientation="horizontal"-->
-<!--            android:src="@drawable/img_tile_cs"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent">-->
-<!--        </ImageButton>-->
-
-        <!--        <LinearLayout-->
-        <!--            android:background="@color/black"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:layout_weight="1"-->
-        <!--            android:orientation="horizontal"-->
-        <!--            >-->
-
-        <!--            <ImageButton-->
-        <!--                android:id="@+id/CS"-->
-        <!--                android:layout_weight="1"-->
-        <!--                android:layout_width="0dp"-->
-        <!--                android:layout_height="match_parent"-->
-        <!--                android:src="@drawable/img_tile_cs"-->
-        <!--                />-->
-
-        <!--            <ImageButton-->
-        <!--                android:id="@+id/Des"-->
-        <!--                android:layout_weight="1"-->
-        <!--                android:layout_width="0dp"-->
-        <!--                android:layout_height="match_parent"-->
-        <!--                android:src="@drawable/img_tile_design"></ImageButton>-->
+            app:layout_constraintWidth_percent="0.5"
+            android:onClick="Display"/>
 
 
-        <!--        </LinearLayout>-->
-
-        <!--        <LinearLayout-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:layout_weight="1"-->
-        <!--            android:orientation="horizontal"-->
-        <!--            >-->
-
-        <!--            <ImageButton-->
-        <!--                android:id="@+id/Math"-->
-        <!--                android:layout_weight="1"-->
-        <!--                android:layout_width="0dp"-->
-        <!--                android:layout_height="match_parent"-->
-        <!--                android:src="@drawable/img_tile_math"-->
-        <!--                />-->
-
-        <!--            <ImageButton-->
-        <!--                android:id="@+id/SE"-->
-        <!--                android:layout_weight="1"-->
-        <!--                android:layout_width="0dp"-->
-        <!--                android:layout_height="match_parent"-->
-        <!--                android:src="@drawable/img_tile_se"></ImageButton>-->
-
-        <!--        </LinearLayout>-->
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
