@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--landscape version of details page-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".DetailActivity">
 
-    <!--    constraint layout representing 1st half of page-->
+<!--    constraint layout representing 1st half of page-->
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@color/red">
 
-        <!--        banner setting the default colour when no topic is selected to represent-->
+<!--        banner setting the default colour when no topic is selected to represent-->
         <View
             android:id="@+id/default_banner"
             android:layout_width="match_parent"
@@ -24,8 +25,8 @@
             android:background="@color/dark_yellow">
         </View>
 
-        <!--        imageview representing banner of the given topic-->
-        <!--         determined in the activity-->
+<!--        Imageview representing the banner of the given topic-->
+<!--        source is determined in the activity through the button tag-->
         <ImageView
             android:id="@+id/detail_banner"
             android:layout_width="match_parent"
@@ -35,13 +36,13 @@
             app:layout_constraintTop_toTopOf="parent"></ImageView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!--    constraint layout representing 2nd half of page-->
+<!--    constraint layout representing 2nd half of page-->
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1">
 
-        <!--        textview representing the given topic-->
+        <!--        textview representing the given topic title-->
         <!--         determined in the activity-->
         <TextView
             android:id="@+id/detail_title"

@@ -7,11 +7,8 @@
     android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <!--<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />-->
-
+    <!--    constraint layout representing 1st half of page-->
+<!--    dimensions changed for horizontal layout-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -19,6 +16,8 @@
         android:background="@color/red"
         >
 
+<!--        main banner background-->
+<!--        dimensions changed for horizontal layout-->
         <ImageView
             android:id="@+id/main_banner"
             android:layout_width="match_parent"
@@ -28,6 +27,8 @@
             tools:layout_editor_absoluteX="0dp">
         </ImageView>
 
+        <!--        main banner text-->
+        <!--        dimensions changed for horizontal layout-->
         <ImageView
             android:id="@+id/banner_text"
             android:layout_width="match_parent"
@@ -40,6 +41,9 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!--    constraint layout representing 2nd half of page-->
+    <!--    contains buttons for each topic under the department-->
+    <!--    tags are passed as unique identfiers to activity that identifies the topic selected-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -58,7 +62,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_percent="0.5"
-            />
+            android:tag="0"
+            android:onClick="Display"/>
 
         <ImageButton
             android:id="@+id/Design"
@@ -71,7 +76,9 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHeight_percent="0.5"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintWidth_percent="0.5" />
+            app:layout_constraintWidth_percent="0.5"
+            android:tag="1"
+            android:onClick="Display"/>
 
         <ImageButton
             android:id="@+id/Math"
@@ -85,7 +92,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHeight_percent="0.5"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintWidth_percent="0.5" />
+            app:layout_constraintWidth_percent="0.5"
+            android:tag="2"
+            android:onClick="Display"/>
 
         <ImageButton
             android:id="@+id/SE"
@@ -98,71 +107,10 @@
             app:layout_constraintTop_toBottomOf="@id/Design"
             app:layout_constraintHeight_percent="0.5"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintWidth_percent="0.5" />
+            app:layout_constraintWidth_percent="0.5"
+            android:tag="3"
+            android:onClick="Display"/>
 
-<!--        <ImageButton-->
-<!--            android:id="@+id/CS"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="0dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:background="@color/black"-->
-<!--            android:orientation="horizontal"-->
-<!--            android:src="@drawable/img_tile_cs"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent">-->
-<!--        </ImageButton>-->
-
-        <!--        <LinearLayout-->
-        <!--            android:background="@color/black"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:layout_weight="1"-->
-        <!--            android:orientation="horizontal"-->
-        <!--            >-->
-
-        <!--            <ImageButton-->
-        <!--                android:id="@+id/CS"-->
-        <!--                android:layout_weight="1"-->
-        <!--                android:layout_width="0dp"-->
-        <!--                android:layout_height="match_parent"-->
-        <!--                android:src="@drawable/img_tile_cs"-->
-        <!--                />-->
-
-        <!--            <ImageButton-->
-        <!--                android:id="@+id/Des"-->
-        <!--                android:layout_weight="1"-->
-        <!--                android:layout_width="0dp"-->
-        <!--                android:layout_height="match_parent"-->
-        <!--                android:src="@drawable/img_tile_design"></ImageButton>-->
-
-
-        <!--        </LinearLayout>-->
-
-        <!--        <LinearLayout-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:layout_weight="1"-->
-        <!--            android:orientation="horizontal"-->
-        <!--            >-->
-
-        <!--            <ImageButton-->
-        <!--                android:id="@+id/Math"-->
-        <!--                android:layout_weight="1"-->
-        <!--                android:layout_width="0dp"-->
-        <!--                android:layout_height="match_parent"-->
-        <!--                android:src="@drawable/img_tile_math"-->
-        <!--                />-->
-
-        <!--            <ImageButton-->
-        <!--                android:id="@+id/SE"-->
-        <!--                android:layout_weight="1"-->
-        <!--                android:layout_width="0dp"-->
-        <!--                android:layout_height="match_parent"-->
-        <!--                android:src="@drawable/img_tile_se"></ImageButton>-->
-
-        <!--        </LinearLayout>-->
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

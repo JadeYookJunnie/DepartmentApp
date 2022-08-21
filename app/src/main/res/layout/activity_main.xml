@@ -7,11 +7,8 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!--<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />-->
 
+    <!--    constraint layout representing 1st half of page-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -19,6 +16,7 @@
         android:background="@color/red"
         >
 
+<!--        main banner background-->
         <ImageView
             android:id="@+id/main_banner"
             android:layout_width="match_parent"
@@ -28,6 +26,7 @@
             tools:layout_editor_absoluteX="0dp">
         </ImageView>
 
+<!--        main banner text-->
         <ImageView
             android:id="@+id/banner_text"
             android:layout_width="match_parent"
@@ -40,6 +39,9 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!--    constraint layout representing 2nd half of page-->
+<!--    contains buttons for each topic under the department-->
+<!--    tags are passed as unique identofoers to activity that identifies the topic selected-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
