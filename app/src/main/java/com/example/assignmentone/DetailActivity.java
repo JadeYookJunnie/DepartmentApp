@@ -35,6 +35,14 @@ public class DetailActivity extends AppCompatActivity {
             banner.setImageDrawable(drawable);
             banner.setScaleType(ImageView.ScaleType.CENTER_CROP);
 
+            TextView title = (TextView) findViewById(R.id.detail_title);
+            String topic_name = getResources().getStringArray(R.array.string_array_titles)[index];
+            title.setText(topic_name);
+
+            TextView description = (TextView)findViewById(R.id.detail_desc);
+            String desc = getResources().getStringArray(R.array.string_array_content)[index];
+            description.setText(desc);
+
         }
 
     }

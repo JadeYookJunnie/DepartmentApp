@@ -19,11 +19,10 @@ public class MainActivity extends AppCompatActivity {
     public void Display(View v) {
         //Toast.makeText(this,"message",Toast.LENGTH_SHORT).show();
         ImageButton button = (ImageButton)v;
-        //GETTAG NOT WORKING
         //System.out.println(button.getTag().toString().toUpperCase());
-        Toast.makeText(this,button.getTag().toString(),Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this,button.getTag().toString(),Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, DetailActivity.class);
-//        intent.putExtra("topic", Integer.parseInt(button.getTag().toString()));
+        intent.putExtra("topic", Integer.parseInt(button.getTag().toString()));
         startActivity(intent);
 
     }
